@@ -434,7 +434,7 @@ function SeverAllConnections(t, cache)
 				if te == "RBXScriptConnection" then
 					v:Disconnect()
 				elseif te == "Instance" then
-					v:Destroy()
+					--v:Destroy()
 				elseif te == "table" then
 					cache[v] = true
 					SeverAllConnections(v, cache)

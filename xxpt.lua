@@ -1151,7 +1151,7 @@ do
 			PromptObj.FrameInstance = ChoicePopup
 			PromptObj.Closed = ChoicePopup.Destroying
 			local function ClosePrompt(method)
-				PromptObj.Active = (ChoicePopup and ChoicePopup:Destroy() and nil) or (PromptEvent:Fire("Close", method and (method == "timeout_")) and nil) or nil
+				--PromptObj.Active = (ChoicePopup and ChoicePopup:Destroy() and nil) or (PromptEvent:Fire("Close", method and (method == "timeout_")) and nil) or nil
 			end
 			PromptObj.Close = ClosePrompt
 			if Close then

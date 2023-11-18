@@ -218,7 +218,7 @@ local function resolveid(image, flag)
 					elseif nfo.AssetTypeId == 13 then
 						local decal = game:GetObjects("rbxassetid://" .. image)[1]
 						image = "rbxassetid://" .. ((decal and decal.Texture) or "0"):match("%d+$")
-						decal = (decal and decal:Destroy() and nil) or nil --(decal and decal:Destroy() and nil) or nil
+						decal = (decal and nil) or nil --(decal and decal:Destroy() and nil) or nil
 					end
 				end)
 			else
